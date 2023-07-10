@@ -1,0 +1,366 @@
+<resources>
+    <string name="app_name">A Game List</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="nombre">Nombre</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="olvido">¿Olvidaste tu contraseña?</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="email">Email</string>
+    <string name="aviso_legal">Acepto la información legal</string>
+    <string name="restablecer_contraseña">Restablecer contraseña</string>
+    <string name="recuperar_informacion">Introduzca su Email asociado a nuestro servidor y en breve le enviaremos un código para restablecer su contraseña</string>
+    <string name="enviar_codigo">Enviar código</string>
+    <string name="volver_enviar">Volver a enviar</string>
+    <string name="inicio_sin_cuenta">Acceder sin sesión</string>
+
+    <!-- Descripcion imagenes -->
+
+    <string name="logo">Logo</string>
+    <string name="barraCarga">Barra de carga del splash</string>
+    <string name="fondoHex">Fondo hexagonos</string>
+    <string name="img_perfil">Foto de perfil</string>
+    <string name="desc_img_juego">Imagen del juego</string>
+
+    <!-- ACCIONES BOTONES -->
+    <string name="Vuelta_atras">Icono vuelta atras</string>
+    <string name="btn_responder">Responder</string>
+    <string name="btn_nuevaLista">Nueva lista</string>
+    <string name="publicar">Publicar</string>
+
+    <string name="titulo_juego">Título del juego</string>
+    <string name="elemento_aux">Elemento auxiliar</string>
+    <string name="nota_juego">9,5</string>
+    <string name="nombre_usuario">Celia Martín</string>
+    <!-- ¿Esto es el string "nombre" con el que te logeas? No sé si influye algo los string -->
+    <string name="arroba_usuario">@celiamartin</string>
+    <string name="fecha">24/05/2023</string>
+    <string name="likes_resenia">389</string>
+
+    <string name="menu_noticias">Noticias</string>
+    <string name="menu_resenas">Reseñas</string>
+    <string name="menu_ranking">Ranking</string>
+
+    <string name="menu_listas">Listas</string>
+    <string name="menu_resenasPerfil">Reseñas</string>
+    <string name="menu_rating">Rating</string>
+
+    <string name="lanzamientos">ÚLTIMOS LANZAMIENTOS</string>
+    <string name="reseñas_recientes">RESEÑAS MÁS RECIENTES</string>
+    <string name="ranking_localidad">RANKING POR LOCALIDAD</string>
+    <string name="juegos_similares">JUEGOS SIMILARES</string>
+
+    <string name="puntuacion_resena">5</string>
+    <string name="min_ago">8m ago</string>
+
+    <string name="numSiguiendo">20</string>
+    <string name="numSeguidores">214</string>
+    <string name="numResenas">45</string>
+
+
+    <string name="lorem_ipsum_largo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum, tellus eu vulputate porttitor, enim nisl commodo urna, in sagittis turpis dolor nec sapien. Etiam et sodales nunc, in porta ante. Nam quis mauris accumsan, lobortis ante sed, mollis ex. Duis pretium lorem mauris, sed molestie enim auctor sit amet. Praesent tempus velit ligula, sit amet rhoncus turpis dapibus vel. Nullam nec eros nisi. Vivamus sodales neque blandit hendrerit cursus. Nam elementum ex nec lorem sollicitudin, non rutrum turpis mattis. Mauris tortor odio, iaculis a dolor ut, auctor vestibulum justo. Donec luctus id quam vel sodales. Proin consectetur non orci in sollicitudin. Pellentesque quis tempor sem, malesuada porttitor tortor. Nunc sem turpis, accumsan non auctor id, tempor sit amet quam. Sed eget sapien eget turpis malesuada ultrices in at libero. Praesent id enim posuere, elementum libero vel, aliquam mauris. Curabitur id elit semper, pharetra enim in, venenatis lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; In eu volutpat nibh. Nam ac nibh non odio feugiat tristique sit amet vitae odio. Aenean sed erat vel ipsum accumsan efficitur sed eu lacus. Vestibulum et iaculis nisl. Vestibulum vulputate, eros eu auctor rhoncus, ante justo maximus ante, ut dignissim nisi orci eu risus. Mauris ullamcorper leo felis. Cras maximus ante a massa imperdiet ornare. Nullam dapibus orci sit amet metus imperdiet, eu posuere elit rhoncus. Nunc id vehicula odio, sit amet convallis quam. Integer facilisis turpis et tellus consectetur aliquam.</string>
+    <string name="lorem_ipsum_corto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum, tellus eu vulputate porttitor, enim nisl commodo urna, in sagittis turpis dolor nec sapien. Etiam et sodales nunc, in porta ante.</string>
+
+    <string name="profile_text">Perfil</string>
+    <string name="profile_config_text">Configuracion</string>
+    <string name="profile_cuenta">Cuenta</string>
+    <string name="profile_notificaciones">Notificaciones</string>
+    <string name="profile_varios">Varios</string>
+
+    <string name="profile_publico">Publico</string>
+    <string name="profile_publico_user">Usuario</string>
+    <string name="profile_publico_name">Nombre</string>
+    <string name="profile_publico_pronouns">Pronombres</string>
+    <string name="profile_publico_pais">País</string>
+    <string name="profile_publico_date">Fecha de nacimiento</string>
+    <string name="profile_publico_bio">Biografía</string>
+
+    <string name="profile_privado">Privado</string>
+    <string name="profile_privado_surname">Apellidos</string>
+    <string name="profile_privado_email">Correo</string>
+    <string name="profile_privado_phone">Teléfono</string>
+    <string name="profile_privado_localidad">Localidad</string>
+    <string name="profile_privado_password">Contraseña</string>
+
+    <string name="profile_comentarios">Comentarios (WIP)</string>
+    <string name="profile_comentarios_respuestas">Permitir respuestas</string>
+    <string name="profile_comentarios_push">Notificaciones push</string>
+    <string name="profile_comentarios_email">Aviso correo</string>
+
+    <string name="profile_redes">Redes</string>
+    <string name="profile_redes_twitter">Twitter</string>
+    <string name="profile_redes_facebook">Facebook</string>
+    <string name="profile_redes_instagram">Instagram</string>
+    <string name="profile_redes_tiktok">TikTok</string>
+    <string name="profile_redes_youtube">Youtube</string>
+
+    <string name="profile_seguridad">Seguridad</string>
+    <string name="profile_seguridad_2FA">Verificacion en dos pasos (WIP)</string>
+    <string name="profile_seguridad_visibilidad">Visibilidad del perfil</string>
+
+    <string name="profile_data_name">Name</string>
+    <string name="profile_data_user">User</string>
+    <string name="info">Información</string>
+    <string name="api">Aplicacion creada con la api IGDB</string>
+
+    <string-array name="array_visibilidad">
+        <item>Todos</item>
+        <item>Seguidores</item>
+        <item>No</item>
+    </string-array>
+
+    <string name="Cambiar_foto_perfil">Cambiar foto de perfil</string>
+
+    <string-array name="array_localidades">
+        <item>Álava</item>
+        <item>Albacete</item>
+        <item>Alicante</item>
+        <item>Almería</item>
+        <item>Asturias</item>
+        <item>Ávila</item>
+        <item>Badajoz</item>
+        <item>Barcelona</item>
+        <item>Burgos</item>
+        <item>Cáceres</item>
+        <item>Cádiz</item>
+        <item>Cantabria</item>
+        <item>Castellón</item>
+        <item>Ciudad Real</item>
+        <item>Córdoba</item>
+        <item>La Coruña</item>
+        <item>Cuenca</item>
+        <item>Gerona</item>
+        <item>Granada</item>
+        <item>Guadalajara</item>
+        <item>Guipúzcoa</item>
+        <item>Huelva</item>
+        <item>Huesca</item>
+        <item>Islas Baleares</item>
+        <item>Jaén</item>
+        <item>León</item>
+        <item>Lérida</item>
+        <item>Lugo</item>
+        <item>Madrid</item>
+        <item>Málaga</item>
+        <item>Murcia</item>
+        <item>Navarra</item>
+        <item>Orense</item>
+        <item>Palencia</item>
+        <item>Las Palmas</item>
+        <item>Pontevedra</item>
+        <item>La Rioja</item>
+        <item>Salamanca</item>
+        <item>Segovia</item>
+        <item>Sevilla</item>
+        <item>Soria</item>
+        <item>Tarragona</item>
+        <item>Santa Cruz de Tenerife</item>
+        <item>Teruel</item>
+        <item>Toledo</item>
+        <item>Valencia</item>
+        <item>Valladolid</item>
+        <item>Vizcaya</item>
+        <item>Zamora</item>
+        <item>Zaragoza</item>
+    </string-array>
+
+    <string-array name="array_paises">
+        <item>Afganistán</item>
+        <item>Albania</item>
+        <item>Alemania</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua y Barbuda</item>
+        <item>Arabia Saudita</item>
+        <item>Argelia</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaiyán</item>
+        <item>Bahamas</item>
+        <item>Bangladés</item>
+        <item>Barbados</item>
+        <item>Baréin</item>
+        <item>Bélgica</item>
+        <item>Belice</item>
+        <item>Benín</item>
+        <item>Bielorrusia</item>
+        <item>Birmania</item>
+        <item>Bolivia</item>
+        <item>Bosnia y Herzegovina</item>
+        <item>Botsuana</item>
+        <item>Brasil</item>
+        <item>Brunéi</item>
+        <item>Bulgaria</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Bután</item>
+        <item>Cabo Verde</item>
+        <item>Camboya</item>
+        <item>Camerún</item>
+        <item>Canadá</item>
+        <item>Catar</item>
+        <item>Chad</item>
+        <item>Chile</item>
+        <item>China</item>
+        <item>Chipre</item>
+        <item>Ciudad del Vaticano</item>
+        <item>Colombia</item>
+        <item>Comoras</item>
+        <item>Corea del Norte</item>
+        <item>Corea del Sur</item>
+        <item>Costa de Marfil</item>
+        <item>Costa Rica</item>
+        <item>Croacia</item>
+        <item>Cuba</item>
+        <item>Dinamarca</item>
+        <item>Dominica</item>
+        <item>Ecuador</item>
+        <item>Egipto</item>
+        <item>El Salvador</item>
+        <item>Emiratos Árabes Unidos</item>
+        <item>Eritrea</item>
+        <item>Eslovaquia</item>
+        <item>Eslovenia</item>
+        <item>España</item>
+        <item>Estados Unidos</item>
+        <item>Estonia</item>
+        <item>Etiopía</item>
+        <item>Filipinas</item>
+        <item>Finlandia</item>
+        <item>Fiyi</item>
+        <item>Francia</item>
+        <item>Gabón</item>
+        <item>Gambia</item>
+        <item>Georgia</item>
+        <item>Ghana</item>
+        <item>Granada</item>
+        <item>Grecia</item>
+        <item>Guatemala</item>
+        <item>Guyana</item>
+        <item>Guinea</item>
+        <item>Guinea ecuatorial</item>
+        <item>Guinea-Bisáu</item>
+        <item>Haití</item>
+        <item>Honduras</item>
+        <item>Hungría</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Irak</item>
+        <item>Irán</item>
+        <item>Irlanda</item>
+        <item>Islandia</item>
+        <item>Islas Marshall</item>
+        <item>Islas Salomón</item>
+        <item>Israel</item>
+        <item>Italia</item>
+        <item>Jamaica</item>
+        <item>Japón</item>
+        <item>Jordania</item>
+        <item>Kazajistán</item>
+        <item>Kenia</item>
+        <item>Kirguistán</item>
+        <item>Kiribati</item>
+        <item>Kuwait</item>
+        <item>Laos</item>
+        <item>Lesoto</item>
+        <item>Letonia</item>
+        <item>Líbano</item>
+        <item>Liberia</item>
+        <item>Libia</item>
+        <item>Liechtenstein</item>
+        <item>Lituania</item>
+        <item>Luxemburgo</item>
+        <item>Madagascar</item>
+        <item>Malasia</item>
+        <item>Malaui</item>
+        <item>Maldivas</item>
+        <item>Malí</item>
+        <item>Malta</item>
+        <item>Marruecos</item>
+        <item>Mauricio</item>
+        <item>Mauritania</item>
+        <item>México</item>
+        <item>Micronesia</item>
+        <item>Moldavia</item>
+        <item>Mónaco</item>
+        <item>Mongolia</item>
+        <item>Montenegro</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Nauru</item>
+        <item>Nepal</item>
+        <item>Nicaragua</item>
+        <item>Níger</item>
+        <item>Nigeria</item>
+        <item>Noruega</item>
+        <item>Nueva Zelanda</item>
+        <item>Omán</item>
+        <item>Países Bajos</item>
+        <item>Pakistán</item>
+        <item>Palaos</item>
+        <item>Palestina</item>
+        <item>Panamá</item>
+        <item>Papúa Nueva Guinea</item>
+        <item>Paraguay</item>
+        <item>Perú</item>
+        <item>Polonia</item>
+        <item>Portugal</item>
+        <item>Reino Unido</item>
+        <item>República Centroafricana</item>
+        <item>República Checa</item>
+        <item>República de Macedonia</item>
+        <item>República del Congo</item>
+        <item>República Democrática del Congo</item>
+        <item>República Dominicana</item>
+        <item>República Sudafricana</item>
+        <item>Ruanda</item>
+        <item>Rumanía</item>
+        <item>Rusia</item>
+        <item>Samoa</item>
+        <item>San Cristóbal y Nieves</item>
+        <item>San Marino</item>
+        <item>San Vicente y las Granadinas</item>
+        <item>Santa Lucía</item>
+        <item>Santo Tomé y Príncipe</item>
+        <item>Senegal</item>
+        <item>Serbia</item>
+        <item>Seychelles</item>
+        <item>Sierra Leona</item>
+        <item>Singapur</item>
+        <item>Siria</item>
+        <item>Somalia</item>
+        <item>Sri Lanka</item>
+        <item>Suazilandia</item>
+        <item>Sudán</item>
+        <item>Sudán del Sur</item>
+        <item>Suecia</item>
+        <item>Suiza</item>
+        <item>Surinam</item>
+        <item>Tailandia</item>
+        <item>Tanzania</item>
+        <item>Tayikistán</item>
+        <item>Timor Oriental</item>
+        <item>Togo</item>
+        <item>Tonga</item>
+        <item>Trinidad y Tobago</item>
+        <item>Túnez</item>
+        <item>Turkmenistán</item>
+        <item>Turquía</item>
+        <item>Tuvalu</item>
+        <item>Ucrania</item>
+        <item>Uganda</item>
+        <item>Uruguay</item>
+        <item>Uzbekistán</item>
+        <item>Vanuatu</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+        <item>Yemen</item>
+        <item>Yibuti</item>
+        <item>Zambia</item>
+        <item>Zimbabue</item>
+    </string-array>
+
+
+</resources>

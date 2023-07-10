@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_crear_resenia"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popupbackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        >
+
+
+        <ImageButton
+            android:id="@+id/btn_crearresenia_atras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:clickable="true"
+            android:contentDescription="@string/Vuelta_atras"
+            android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/cruz_cancelar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/buscadorCrearResena"
+            style="@style/SearchViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:elevation="8dp"
+            app:queryHint="Buscar juego..."
+            app:searchIcon="@drawable/iconbuscador_blanco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_crearresenia_atras" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/recyclerCrearResena"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buscadorCrearResena"
+            android:elevation="10dp"/>
+
+
+        <TextView
+            android:id="@+id/txt_crearresenia_puntuacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PUNTUACIÓN"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="35dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/advent_pro_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buscadorCrearResena" />
+
+        <EditText
+            android:id="@+id/et_nota"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:minHeight="48dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/semiTransparente"
+            android:backgroundTint="@color/semiTransparente"
+            app:layout_constraintStart_toEndOf="@+id/txt_crearresenia_puntuacion"
+            app:layout_constraintTop_toBottomOf="@+id/buscadorCrearResena" />
+
+
+        <TextView
+            android:id="@+id/txt_crearresenia_resenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESEÑA"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="35dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/advent_pro_medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_crearresenia_puntuacion" />
+
+        <EditText
+            android:id="@+id/et_reseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="200dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:hint="Escriba aquí su reseña"
+            android:minHeight="48dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/semiTransparente"
+            android:backgroundTint="@color/semiTransparente"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_crearresenia_resenia" />
+
+        <Button
+            android:id="@+id/bt_publicar"
+            style="@style/boton_morado"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/publicar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_reseña" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

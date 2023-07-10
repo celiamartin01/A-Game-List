@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimario"
+    android:layout_marginTop ="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="9dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rectangulo_negro_aux"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:id="@+id/numero_ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro_medium"
+            android:textSize="20sp"
+            android:elevation="7dp"
+            android:textColor="@color/colorSecundario"
+            android:layout_marginStart="-14dp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/fotoJuegoRanking"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/desc_img_juego"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tituloJuegoRanking"
+        android:layout_width="wrap_content"
+        android:maxWidth="100dp"
+        android:layout_height="32dp"
+        android:maxHeight="25dp"
+        android:text="@string/titulo_juego"
+        android:textColor="@color/colorSecundario"
+        android:fontFamily="@font/advent_pro_medium"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="23dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rectangulo_negro" />
+
+        <TextView
+            android:id="@+id/notaRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="-26dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="9.5"
+            android:textColor="@color/colorSecundario"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

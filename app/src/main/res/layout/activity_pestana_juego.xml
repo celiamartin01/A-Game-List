@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_pestanajuego_mas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/colorPrimario"
+        android:contentDescription="boton"
+        android:src="@drawable/mas"
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="end|bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shapeAppearanceOverlay="@style/fab" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_pestanajuego_resenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimario"
+        android:clickable="true"
+        android:contentDescription="boton"
+        android:focusable="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab_pestanajuego_mas"
+        app:layout_constraintEnd_toEndOf="@id/fab_pestanajuego_mas"
+        app:layout_constraintStart_toStartOf="@+id/fab_pestanajuego_mas"
+        app:shapeAppearanceOverlay="@style/fab"
+        app:srcCompat="@drawable/resenialogo" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_pestanajuego_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimario"
+        android:clickable="true"
+        android:contentDescription="boton"
+        android:focusable="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:visibility="invisible"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toTopOf="@id/fab_pestanajuego_resenia"
+        app:layout_constraintEnd_toEndOf="@id/fab_pestanajuego_resenia"
+        app:layout_constraintStart_toStartOf="@+id/fab_pestanajuego_resenia"
+        app:shapeAppearanceOverlay="@style/fab"
+        app:srcCompat="@drawable/listalogo" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_pestanajuego_portadaGrande"
+                android:layout_width="match_parent"
+                android:layout_height="287dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@android:drawable/ic_menu_gallery"
+                app:layout_constraintBaseline_toBottomOf="parent" />
+            <!-- La imagen se coge de la base de datos, pongo esa para que se vea en plan provisional -->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_pestanajuego_contenido"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_pestanajuego_portadaGrande">
+
+                <LinearLayout
+                    android:id="@+id/layout_pestanajuego_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBaseline_toBottomOf="parent">
+
+                    <TextView
+                        android:id="@+id/txt_pestanajuego_titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:maxWidth="300dp"
+                        android:text="@string/titulo_juego"
+                        android:textColor="#6127FF"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/rectangulo_morado" />
+
+                    <TextView
+                        android:id="@+id/tx_pestanajuego_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-23dp"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:text="@string/nota_juego"
+                        android:textColor="#EFEFF6"
+                        android:textSize="14dp" />
+
+                    <!-- Esto igual, se coge todo de la base de datos -->
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tx_pestanajuego_descripcion"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:orientation="vertical"
+                    android:text="Resumen juego "
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_pestanajuego_titulo" />
+
+                <TextView
+                    android:id="@+id/titulo_pestanajuego_etiquetas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:text="Etiquetas"
+                    android:textColor="@color/colorTerciario"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tx_pestanajuego_descripcion" />
+
+                <LinearLayout
+                    android:id="@+id/layout_pestanajuego_etiquetas"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="50dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titulo_pestanajuego_etiquetas"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/layout_pestanajuego_etiquetasAbajo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="50dp"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/layout_pestanajuego_etiquetas"
+
+                    />
+                <!--descomentar luego
+                                <TextView
+                                    android:id="@+id/titulo_pestanajuego_misfran"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="@font/advent_pro_medium"
+                                    android:text="Misma franquicia"
+                                    android:textColor="@color/colorPrimario"
+                                    android:textSize="15sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/layout_pestanajuego_etiquetasAbajo" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerMismaFranquiciaAchatao"
+                                    android:layout_marginStart="-20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/advent_pro_medium"
+                                    android:text="Misma franquicia"
+                                    android:textColor="@color/colorPrimario"
+                                    android:textSize="15sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/titulo_pestanajuego_misfran" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/layoutTituloResenas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerMismaFranquiciaAchatao">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/armata"
+                            android:text="@string/reseñas_recientes"
+                            android:textColor="@color/colorTerciario"
+                            android:textSize="20dp" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="35dp"
+                                            android:src="@drawable/flecha_adelante" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:src="@drawable/linea_divisor" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerResenasRecientesJuego"
+                                    android:layout_marginStart="-20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+                                    android:fontFamily="@font/advent_pro_medium"
+                                    android:text="Misma franquicia"
+                                    android:textColor="@color/colorPrimario"
+                                    android:textSize="15sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/layoutTituloResenas" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:id="@+id/layoutTituloJuegosSimilares"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/recyclerResenasRecientesJuego">
+
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/armata"
+                                            android:text="@string/juegos_similares"
+                                            android:textColor="@color/colorTerciario"
+                                            android:textSize="20dp" />
+
+                                        <ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="35dp"
+                                            android:src="@drawable/flecha_adelante" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:src="@drawable/linea_divisor" />
+
+                                </LinearLayout>
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recyclerJuegosSimilares"
+                                    android:layout_marginStart="-20dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/advent_pro_medium"
+                                    android:text="Misma franquicia"
+                                    android:textColor="@color/colorPrimario"
+                                    android:textSize="15sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/layoutTituloJuegosSimilares" />
+
+                -->
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#80140D29"
+        app:elevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_pestaniajuego_atras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="25dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/flecha_atras_blanca" />
+
+                <TextView
+                    android:id="@+id/txt_pestanajuego_titulobarra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:text="@string/titulo_juego"
+                    android:textColor="@color/colorSecundario"
+                    android:textFontWeight="500"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/elemento_aux"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/notificaciones" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

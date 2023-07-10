@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".listahorizontal_juego"
+
+
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tx_juego_nombre"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/armata"
+        android:maxWidth="270dp"
+        android:maxHeight="51dp"
+        android:text="ULTIMOS LANZAMIENTOS"
+        android:textColor="@color/colorTerciario"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_listahorizontal_flecha"
+
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/elemento_aux"
+        android:src="@drawable/flecha_next"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/linea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tx_juego_nombre" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recview_listahorizontal_lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

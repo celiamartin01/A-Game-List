@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/colorSecundarioSpinner" />
+                    <corners android:radius="4dp" />
+                </shape>
+            </item>
+            <item android:gravity="center_vertical|right" android:drawable="@drawable/flecha_abajo" />
+        </layer-list>
+    </item>
+</selector>

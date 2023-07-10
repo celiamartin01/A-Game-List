@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="texto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_custom"
+    android:orientation="horizontal"
+    tools:context=".fragment_fotoPerfil">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#80140D29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorSecundario">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp">
+
+
+                <ImageButton
+                    android:id="@+id/bt_cambiarfoto_atras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center |left"
+                    android:layout_marginStart="25dp"
+                    android:adjustViewBounds="true"
+                    android:background="@color/transparent"
+                    android:contentDescription="@string/elemento_aux"
+                    android:maxWidth="56dp"
+                    android:maxHeight="56dp"
+                    android:minWidth="56dp"
+                    android:minHeight="56dp"
+                    android:onClick="abrirPerfil"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/flecha_atras" />
+
+                <TextView
+                    android:id="@+id/tv_user_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="25dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:text="@string/Cambiar_foto_perfil"
+                    android:textColor="@color/colorTerciario"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/elemento_aux"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/notificaciones_negro" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:id="@+id/tv_perfil_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/armata"
+        android:text="Selecciona una foto de perfil."
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_perfil_">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/foto_perfil1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fotoperfil1" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/foto_perfil2"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fotoperfil2" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/foto_perfil3"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fotoperfil3" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/foto_perfil4"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fotoperfil4" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/foto_perfil5"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="90dp"
+                android:background="@color/transparent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/fotoperfil5" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_fotoPerfil_guardar"
+        style="@style/boton_morado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/armata"
+        android:text="Guardar foto seleccionada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

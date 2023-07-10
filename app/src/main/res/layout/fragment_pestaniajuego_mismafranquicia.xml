@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_pestaniajuego_mismafranquicia">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageview_juegoachatado"
+        android:layout_width="110dp"
+        android:layout_height="63dp"
+        android:layout_gravity="center"
+        android:src="@drawable/mario_kart"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tx_juegoachatado_nombre"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/advent_pro"
+        android:textAlignment="center"
+        android:maxHeight="33sp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:text="@string/titulo_juego"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_juegoachatado" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

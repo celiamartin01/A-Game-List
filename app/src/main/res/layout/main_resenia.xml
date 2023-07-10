@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="287dp"
+                android:src="@drawable/mario_odyssey"
+                android:contentDescription="@string/desc_img_juego"/>
+            <!-- La imagen se coge de la base de datos, pongo esa para que se vea en plan provisional -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_marginStart="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="28dp"
+                    android:maxWidth="220dp"
+                    android:text="@string/titulo_juego"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:textColor="@color/colorPrimario"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangulo_morado"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="@string/elemento_aux"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nota_juego"
+                    android:layout_marginStart="-23dp"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:textColor="#EFEFF6"
+                    android:textSize="14sp"/>
+                <!-- Esto igual, se coge todo de la base de datos -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <!-- En este layout va la reseña "principal", y más abajo con un listView van las respuestas -->
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/foto_perfil"
+                    android:contentDescription="@string/img_perfil"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="220dp"
+                            android:layout_height="20dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxHeight="20dp"
+                                android:text="@string/nombre_usuario"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/advent_pro_medium"
+                                android:textColor="@color/colorPrimario"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxHeight="18dp"
+                                android:text="@string/arroba_usuario"
+                                android:textSize="14dp"
+                                android:layout_marginStart="5dp"
+                                android:fontFamily="@font/advent_pro_medium"
+                                android:textColor="@color/colorTerciario70"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginTop="3dp"
+                            android:text="@string/fecha"
+                            android:textColor="@color/colorTerciario50"
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="295dp"
+                        android:text="@string/lorem_ipsum_corto"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/advent_pro_medium"
+                        android:textColor="@color/black"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+
+                        <Button
+                            android:layout_width="188dp"
+                            android:layout_height="22dp"
+                            android:text="@string/btn_responder"
+                            android:fontFamily="@font/advent_pro_medium"
+                            android:textSize="11sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorTerciario50"
+                            android:background="@drawable/btn_custom"
+                            android:padding="0dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:src="@drawable/rectangulo_rosa"
+                            android:contentDescription="@string/elemento_aux"/>
+
+                        <LinearLayout
+                            android:layout_width="46dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="-50dp"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="3dp"
+                                android:src="@drawable/corazon"
+                                android:contentDescription="@string/elemento_aux"/>
+
+                            <TextView
+                                android:layout_width="28dp"
+                                android:layout_height="16dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/colorSecundario"
+                                android:fontFamily="@font/advent_pro_medium"
+                                android:textSize="12sp"
+                                android:text="@string/likes_resenia"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Aquí iría el listView de las respuestas -->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#80140D29"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnAtrasResenia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flecha_atras_blanca"
+                    android:layout_marginStart="40dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/elemento_aux"/>
+
+                <TextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="28dp"
+                    android:text="@string/titulo_juego"
+                    android:fontFamily="@font/advent_pro_medium"
+                    android:textColor="@color/colorSecundario"
+                    android:textFontWeight="500"
+                    android:textSize="20sp"
+                    android:layout_marginStart="27dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notificaciones"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/elemento_aux"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+
+

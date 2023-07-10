@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_post_splash">
+
+
+    <fragment
+        android:id="@+id/fragment_post_splash"
+        android:name="com.example.agamelist.fragment_post_splash"
+        android:label="fragment_post_splash"
+        tools:layout="@layout/fragment_post_splash" >
+        <action
+            android:id="@+id/action_fragment_post_splash_to_fragment_login"
+            app:destination="@id/fragment_login" />
+        <action
+            android:id="@+id/action_fragment_post_splash_to_fragment_forgetpass"
+            app:destination="@id/fragment_forgetpass" />
+        <action
+            android:id="@+id/action_fragment_post_splash_to_fragment_register"
+            app:destination="@id/fragment_register" />
+        <action
+            android:id="@+id/action_fragment_post_splash_to_main_pagina_principal"
+            app:destination="@id/main_pagina_principal" />
+        <action
+            android:id="@+id/action_fragment_post_splash_to_main_resenia"
+            app:destination="@id/main_resenia" />
+        <action
+            android:id="@+id/action_fragment_post_splash_to_pestana_juego"
+            app:destination="@id/pestana_juego" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_login"
+        android:name="com.example.agamelist.fragment_login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragment_login_to_main_pagina_principal"
+            app:destination="@id/main_pagina_principal" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_forgetpass"
+        android:name="com.example.agamelist.fragment_forgetpass"
+        android:label="fragment_forgetpass"
+        tools:layout="@layout/fragment_forgetpass" />
+    <fragment
+        android:id="@+id/fragment_register"
+        android:name="com.example.agamelist.fragment_register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+    </fragment>
+    <activity
+        android:id="@+id/main_pagina_principal"
+        android:name="com.example.agamelist.main_pagina_principal"
+        android:label="main_pagina_principal"
+        tools:layout="@layout/main_pagina_principal" />
+    <activity
+        android:id="@+id/main_resenia"
+        android:name="com.example.agamelist.main_resenia"
+        android:label="main_resenia"
+        tools:layout="@layout/main_resenia"/>
+    <activity
+        android:id="@+id/activity_perfil"
+        android:name="com.example.agamelist.activity_perfil"
+        android:label="activity_perfil"
+        tools:layout="@layout/activity_perfil" />
+    <fragment
+        android:id="@+id/fragment_perfil_publico"
+        android:name="com.example.agamelist.fragment_perfil_publico"
+        android:label="fragment_perfil_publico"
+        tools:layout="@layout/fragment_perfil_publico" >
+        <action
+            android:id="@+id/action_fragment_perfil_publico_to_activity_perfil"
+            app:destination="@id/activity_perfil" />
+    </fragment>
+    <activity
+        android:id="@+id/pestana_juego"
+        android:name="com.example.agamelist.pestana_juego"
+        android:label="pestana_juego" />
+</navigation>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="30dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fotoJuegoResena"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/beti"/>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="-35dp"
+            android:src="@drawable/rectangulo_inf"/>
+
+        <TextView
+            android:id="@+id/puntuacionResena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-45dp"
+            android:layout_marginStart="-5dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="@string/puntuacion_resena"
+            android:textColor="@color/colorSecundario"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-15dp"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="/5"
+            android:textColor="@color/colorSecundario"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nombreUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="20dp"
+                android:maxWidth="100dp"
+                android:textColor="@color/colorPrimario"
+                android:textSize="16sp"
+                android:fontFamily="@font/advent_pro_medium"
+                android:text="@string/nombre_usuario"/>
+
+            <TextView
+                android:id="@+id/arroba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/colorTerciario70"
+                android:maxWidth="100dp"
+                android:maxHeight="18dp"
+                android:textSize="14sp"
+                android:text="@string/arroba_usuario"/>
+
+            <TextView
+                android:id="@+id/minutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="16dp"
+                android:maxWidth="55dp"
+                android:text="8"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="-4dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorTerciario50"
+                android:fontFamily="@font/advent_pro_medium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="16dp"
+                android:maxWidth="55dp"
+                android:text="min_ago"
+                android:layout_marginStart="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/colorTerciario50"
+                android:fontFamily="@font/advent_pro_medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+             <TextView
+                 android:id="@+id/txtResena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="120dp"
+                android:text="@string/lorem_ipsum_largo"
+                android:textColor="@color/black"
+                android:fontFamily="@font/advent_pro_medium"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

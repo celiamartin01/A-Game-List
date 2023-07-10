@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    android:layout_marginStart="30dp"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/fotoJuego"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/desc_img_juego"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tituloJuego"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:textAlignment="center"
+        android:text="@string/titulo_juego"
+        android:layout_gravity="bottom |center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/advent_pro_medium"
+        android:textSize="13sp" />
+
+</LinearLayout>

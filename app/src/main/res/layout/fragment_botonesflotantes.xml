@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    tools:context=".fragment_botonesflotantes">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_botonesflotantes_mas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorPrimario"
+            android:contentDescription="boton"
+            android:src="@drawable/mas"
+            app:layout_constraintBottom_toBottomOf="@+id/fab_botonesflotantes_resenia"
+            app:layout_constraintEnd_toStartOf="@+id/fab_botonesflotantes_resenia"
+            app:layout_constraintTop_toTopOf="@+id/fab_botonesflotantes_resenia"
+            app:shapeAppearanceOverlay="@style/fab" />
+
+        <TextView
+            android:id="@+id/titulo_botonesflotantes_etiquetas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="Crear"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fab_botonesflotantes_mas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fab_botonesflotantes_mas" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_botonesflotantes_resenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/colorPrimario"
+            android:clickable="true"
+            android:contentDescription="boton"
+            android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/fab"
+            app:srcCompat="@drawable/resenialogo" />
+
+        <TextView
+            android:id="@+id/titulo_botonesflotantes_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="Reseña"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fab_botonesflotantes_resenia"
+            app:layout_constraintStart_toStartOf="@+id/fab_botonesflotantes_resenia" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_botonesflotantes_lista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/colorPrimario"
+            android:clickable="true"
+            android:contentDescription="boton"
+            android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="@+id/fab_botonesflotantes_mas"
+            app:layout_constraintStart_toEndOf="@+id/fab_botonesflotantes_resenia"
+            app:layout_constraintTop_toTopOf="@+id/fab_botonesflotantes_mas"
+            app:shapeAppearanceOverlay="@style/fab"
+            app:srcCompat="@drawable/listalogo" />
+
+        <TextView
+            android:id="@+id/titulo_botonesflotantes_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/advent_pro_medium"
+            android:text="Lista"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fab_botonesflotantes_lista"
+            app:layout_constraintStart_toStartOf="@+id/fab_botonesflotantes_lista" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

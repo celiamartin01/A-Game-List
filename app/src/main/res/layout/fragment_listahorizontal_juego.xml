@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".listahorizontal_juego"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageview_juego"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:shapeAppearanceOverlay="@style/roundimageview"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBaseline_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tx_juego_nombre"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:fontFamily="@font/advent_pro"
+        android:textAlignment="center"
+        android:maxWidth="110sp"
+        android:maxHeight="33sp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:text="Título del juego"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageview_juego" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

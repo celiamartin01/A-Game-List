@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/inicio"
+        android:title="Inicio"
+        android:icon="@drawable/menu_inicio_estilo" />
+
+    <item android:id="@+id/crear"
+        android:title="Crear"
+        android:icon="@drawable/menu_crear_estilo"/>
+
+    <item android:id="@+id/descubrir"
+        android:title="Descubrir"
+        android:icon="@drawable/menu_discover_estilo"
+        />
+
+</menu>

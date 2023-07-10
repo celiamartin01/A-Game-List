@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "167412454061",
+    "firebase_url": "https://a-game-list-app-default-rtdb.firebaseio.com",
+    "project_id": "a-game-list-app",
+    "storage_bucket": "a-game-list-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167412454061:android:2f856210a7f9a6735bec24",
+        "android_client_info": {
+          "package_name": "com.example.agamelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167412454061-ik7k2g5nbk6mefb7epvf1oel1jsgdbmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB93yvmIeD-iicyeeSLYIVmq2NoVc4ffYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "167412454061-26o06juuetfa6f1udr88sgslp8fq47ru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

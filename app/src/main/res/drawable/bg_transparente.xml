@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SE UTILIZA EN LA PESTANIA DE JUEGO ARRIBA, PARA EL HEADER -->
+
+<!-- este background siempre va a tener la opacidad al 50% porque lo mando desde la clase java -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"> <!-- shape, no necesario pero es una buena práctica incluirlo // indica que el drawable debe tener la forma de un rectángulo -->
+    <solid android:color="@color/colorTerciario" />
+</shape>
